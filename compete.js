@@ -10,7 +10,7 @@ class Button {
     this.el = el;
     this.hue = description.hue;
     this.sound = loadSound(description.file);
-    this.paint(25);
+    this.paint(50);
   }
 
   paint(level) {
@@ -19,9 +19,9 @@ class Button {
   }
 
   async press(volume) {
-    this.paint(50);
+    this.paint(80);
     await this.play(volume);
-    this.paint(25);
+    this.paint(50);
   }
 
   // Work around Safari's rule to only play sounds if given permission.
@@ -92,11 +92,11 @@ class Game {
   }
 
   getPlayerName() {
-    return localStorage.getItem('userName') ?? 'Mystery player';
+    return localStorage.getItem('userName') ?? 'Unknown Name (select in \"Home\")';
   }
 
   async playSequence() {
-    await delay(500);
+    await delay(200);
     for (const btn of this.sequence) {
       await btn.press(1.0);
       await delay(100);
