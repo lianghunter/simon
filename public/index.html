@@ -2,14 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Tell browsers not to scale the viewport automatically -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
 
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="login.css" />
 
-    <!-- Include bootstrap CSS framework -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,14 +27,10 @@
       </nav>
     </header>
 
-      <!-- Since we don't have the ability to style we use old style HTML to give some visual formatting -->
-      <hr />
-    </header>
-    
     <main class="container-fluid bg-secondary text-center">
       <div>
-        <h1>Welcome</h1>
-        <p>Login to play</p>
+        <h1>Welcome to Simon</h1>
+        <!-- Displayed when needing authentication -->
         <div id="loginControls" style="display: none">
           <div class="input-group mb-3">
             <span class="input-group-text">@</span>
@@ -99,7 +93,9 @@
         <span class="text-reset">Hunter Liang</span>
         <a
           class="text-reset"
-          href="https://github.com/lianghunter/simon">Source</a>
+          href="https://github.com/lianghunter/simon"
+          >Source</a
+        >
       </div>
     </footer>
     <script src="login.js"></script>
