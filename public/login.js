@@ -50,7 +50,7 @@ async function loginOrCreate(endpoint) {
 }
 
 function play() {
-  window.location.href = 'play.html';
+  window.location.href = 'compete.html';
 }
 
 function logout() {
