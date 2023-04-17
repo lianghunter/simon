@@ -35,7 +35,6 @@ function peerProxy(httpServer) {
           connections.splice(i, 1);
           return true;
         }
-        return false;
       });
     });
 
